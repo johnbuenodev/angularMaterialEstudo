@@ -1,0 +1,46 @@
+<div class="container-column">
+    <!-- variavel de interface #togglebtn-->
+    <mat-button-toggle class="button-mat" #toggleBtn>Toggle button</mat-button-toggle>
+    <br>
+    <br>
+    <span class="text-title">valor: {{toggleBtn.checked}}</span>
+</div>
+<div class="container-column">
+    <!-- variavel de interface #togglebtn-->
+    <mat-button-toggle class="button-mat" #toggleBtn2 checked>Toggle button checked</mat-button-toggle>
+    <br>
+    <br>
+    <span class="text-title">valor: {{toggleBtn2.checked}}</span>
+</div>
+<div class="container-column">
+    <!-- variavel de interface #togglebtn-->
+    <mat-button-toggle class="button-mat" #toggleBtn4 disabled>Toggle button Disabled</mat-button-toggle>
+    <br>
+    <br>
+    <span class="text-title">valor: {{toggleBtn4.checked}}</span>
+</div>
+<div class="container-column">    
+    <h2 class="text-title">Button Toggle Group</h2>
+    <br>
+    <br>
+    <mat-button-toggle-group class="button-mat" #valueBtnTGroup="matButtonToggleGroup" >
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="flutter">Flutter</mat-button-toggle>
+        <mat-button-toggle value="reactjs">Reactjs</mat-button-toggle>
+    </mat-button-toggle-group>
+    <br>
+    <span class="text-title">valor: {{valueBtnTGroup.value}}</span>
+</div>
+<div class="container-column">
+    <h2 class="text-title">Button Toggle Group Multiplo</h2>
+    <br>
+    <br>
+    <mat-button-toggle-group class="button-mat" #valueBtnTGroup2="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="flutter">Flutter</mat-button-toggle>
+        <mat-button-toggle value="reactjs">Reactjs</mat-button-toggle>
+    </mat-button-toggle-group>
+    <br>
+    <span class="text-title">valor: {{valueBtnTGroup2.value}}</span>
+</div>
+

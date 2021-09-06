@@ -1,0 +1,47 @@
+<div class="container-column">
+    <div class="container-row">
+        <mat-card mat-elevation-z8>
+            <mat-card-content>
+              <section  *ngIf="mode === 'determinate'">
+                <label >Progress:</label>
+                <mat-slider [color]="color2" [value]="valor"></mat-slider>
+              </section>
+            </mat-card-content>
+            </mat-card> 
+    </div>
+</div>
+<div class="container-column" mat-elevation-z8 *ngIf="this.items.length == 999">    
+    <span style="margin-left: 1rem;margin-bottom: 1rem;">- Exemplo de uso de Virtual Scroll -</span>    
+<cdk-virtual-scroll-viewport style="margin-left: 1rem;" itemSize="50" class="virtual-viewport" >
+    <div *cdkVirtualFor="let item of items" class="list-item">Log do processamento: {{item.valor}}</div>
+  </cdk-virtual-scroll-viewport>
+</div>
+<div class="container-column">
+    <div class="container-row">
+        <mat-card>
+            <mat-card-content>
+              <h2>Result</h2>
+            
+              <mat-progress-spinner
+                  [color]="color"
+                  [mode]="mode"
+                  [value]="valor">
+                  <!-- [atributo do elemento]="valor declarado no typescript / combo box"-->
+              </mat-progress-spinner>
+            </mat-card-content>
+            </mat-card>
+    </div>
+</div>  
+<div class="container-column">
+    <div class="container-row">
+        <mat-spinner></mat-spinner>
+    </div>
+</div>  
+<div class="container-column">
+    <div class="container-row">
+        <mat-spinner [color]="colorValue2" *ngIf="showSinner"></mat-spinner>
+    </div>
+</div>  
+<div class="container-row" style="margin: 1rem;">
+    <button mat-raised-button [color]="colorValue" (click)="loaddb()">Atualizar dados</button>
+</div>

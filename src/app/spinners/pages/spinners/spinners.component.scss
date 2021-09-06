@@ -1,0 +1,30 @@
+.container-column{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px)
+{
+    
+    .container-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.virtual-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+  }
+  
+  .list-item {
+    height: 50px;
+}

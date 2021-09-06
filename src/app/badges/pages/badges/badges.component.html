@@ -1,0 +1,35 @@
+<div class="container-row">
+    <span matBadge="5" matBadgeOverlap="false">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="8" matBadgeSize="large" matBadgePosition="before">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="10" matBadgePosition="after" matBadgeSize="small" matBadgeColor="primary" matBadgeOverlap="false">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="11" matBadgePosition="above" matBadgeSize="medium" matBadgeColor="accent" matBadgeOverlap="false">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="12" matBadgePosition="below" matBadgeSize="large" matBadgeColor="warn" matBadgeOverlap="false">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="13" matBadgePosition="below before">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="12" matBadgePosition="below after">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="14" matBadgePosition="above before">Notificação</span>
+</div>
+<div class="container-row">
+    <span matBadge="15" matBadgePosition="above after">Notificação</span>
+</div>
+<div class="container-row">
+    <button mat-raised-button matBadge="253" [matBadgeHidden]="status" (click)="alternaVisibilidade()">
+        Notificação click aqui
+    </button>
+</div>
+<div class="container-row">
+    <h3 style="margin-right: 1rem;">Click na Pizza: </h3><mat-icon matBadgeColor="warn" [matBadge]="value" (click)="adicionar()">local_pizza</mat-icon>
+</div>

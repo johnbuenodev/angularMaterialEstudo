@@ -1,0 +1,53 @@
+.button-menu{
+    
+    margin: 1rem;
+    border: 2px solid ;
+}
+//.header{
+//    display: flex;
+ //   flex-direction:row;
+//}
+
+.title{
+    margin:1rem;
+
+}
+.space-elemento {
+    flex: 1 1 auto;
+  }
+
+@media (max-width: 600px)
+{
+    .header{
+        display:flex;
+    }
+
+    .title{
+        margin:1rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 420px)
+{
+
+    .buttonicon{
+        display: none;
+    }
+
+}
+
+@media (max-width: 300px)
+{
+
+    .title{
+        margin:1rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+

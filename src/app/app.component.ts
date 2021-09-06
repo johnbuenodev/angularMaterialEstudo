@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'materialappestudo';
+
+
+  alert(){
+    alert("Objeto de Estudo como referencia!")
+  }
 }
+
